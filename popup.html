@@ -3,6 +3,8 @@
 <head>
     <title>blockerDNS</title>
     <link rel="stylesheet"
+        href="css/mdc.switch.min.css">
+    <link rel="stylesheet"
         href="css/popup.css">
 </head>
 
@@ -11,12 +13,37 @@
         <img src='img/logo_header_256.png'>
     </div>
     <div class="content">
-        <div id="active">
-            status
+        <div class="two-grid">
+            <div id="active">
+            </div>
+            <div class="mdc-switch"
+                id="activeToggle">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay">
+                    <div class="mdc-switch__thumb">
+                        <input type="checkbox"
+                            class="mdc-switch__native-control"
+                            role="switch">
+                    </div>
+                </div>
+            </div>
         </div>
-        <button id="toggleActive">Sample Second</button>
+        <br>
+        <div class="divider"></div>
+        <br>
+        <br>
+        <div class="medium-text">
+            To block ads on your Android, desktop computer, router or any other devices at the <b>DNS level</b>, check out <a href="https://blockerdns.com"
+                target="_blank">our website</a>.
+        </div>
+
+        <br>
+        <div class="small-text">blockerDNS doesn't collect or log any of your data, simple as that. You can read our privacy policy <a href="https://blockerdns.com/privacy#extension"
+                class="small-text"
+                target="_blank">here</a>.</div>
     </div>
 
+    <script src="js/mdc.switch.min.js"></script>
     <script src="js/popup.js"></script>
 </body>
 

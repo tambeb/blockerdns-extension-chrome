@@ -1,7 +1,7 @@
 {
     "name": "blockerDNS",
-    "version": "0.1",
-    "description": "blockerDNS service as Chrome Extension",
+    "version": "1.0",
+    "description": "blockerDNS service Chrome Extension",
     "permissions": [
         "http://*/*",
         "https://*/*",
