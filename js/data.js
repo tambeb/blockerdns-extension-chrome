@@ -1,6 +1,10 @@
 const redirectUrl = 'http://127.0.0.1';
 
 var adDomains = [
+    '*://www.bleepstatic.com/*'
+];
+
+var adDomainsx = [
     '*://0.nextyourcontent.com/*',
     '*://0.r.msn.com/*',
     '*://000.0x1f4b0.com/*',

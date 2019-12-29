@@ -1,12 +1,13 @@
 {
     "name": "blockerDNS",
     "version": "0.1",
-    "description": "blockerDNS Chrome Extension",
+    "description": "blockerDNS service as Chrome Extension",
     "permissions": [
         "http://*/*",
         "https://*/*",
         "webRequest",
-        "webRequestBlocking"
+        "webRequestBlocking",
+        "storage"
     ],
     "icons": {
         "16": "img/icon_16.png",
@@ -21,6 +22,10 @@
             "js/data.js",
             "js/background.js"
         ]
+    },
+    "browser_action": {
+        "default_icon": "img/icon_16.png",
+        "default_popup": "popup.html"
     },
     "manifest_version": 2
 }
