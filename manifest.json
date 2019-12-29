@@ -1,7 +1,10 @@
 {
-    "name": "blockerDNS",
+    "name": "blockerDNS Ad Blocking",
+    "short_name": "blockerDNS",
     "version": "1.0",
     "description": "blockerDNS service Chrome Extension",
+    "author": "Tambe Barsbay",
+    "homepage_url": "https://blockerdns.com",
     "permissions": [
         "http://*/*",
         "https://*/*",
