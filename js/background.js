@@ -55,3 +55,7 @@ chrome.storage.onChanged.addListener( function ( changes, areaName ) {
         }
     }
 } )
+
+chrome.runtime.onInstalled.addListener( function () {
+    chrome.tabs.create( { url: 'https://blockerdns.com/extension' } );
+} )
