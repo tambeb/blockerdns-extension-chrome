@@ -15,6 +15,8 @@ function update() {
             switchControl.checked = false;
         }
     } )
+
+    updateVersion();
 }
 
 function toggleActive() {
@@ -23,6 +25,22 @@ function toggleActive() {
     update();
 }
 
-document.getElementById( 'activeToggle' ).addEventListener( 'click', toggleActive )
+function checkBlockListUpdate() {
+    chrome.storage.onChanged.addListener( function ( changes, areaName ) {
+        if ( changes.adDomainsVersion ) {
+            updateVersion();
+        }
+    } )
+    chrome.storage.local.set( { checkBlockListUpdate: true }, function () { } );
+}
+
+function updateVersion() {
+    chrome.storage.local.get( [ 'adDomainsVersion' ], function ( result ) {
+        document.getElementById( 'version' ).innerHTML = result.adDomainsVersion;
+    } )
+}
+
+document.getElementById( 'activeToggle' ).addEventListener( 'click', toggleActive );
+document.getElementById( 'update' ).addEventListener( 'click', checkBlockListUpdate );
 
 update();
