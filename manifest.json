@@ -30,5 +30,6 @@
         "default_icon": "img/icon_16.png",
         "default_popup": "popup.html"
     },
+    "default_locale": "en",
     "manifest_version": 2
 }
